@@ -10,7 +10,7 @@ const app = express();
 app.use(express.json());
 app.use(
     cors({
-      origin: "*", // Change this to your frontend domain in production
+      origin: "https://email-scheduler-psi.vercel.app/", // Change this to your frontend domain in production
       methods: ["GET", "POST", "PUT", "DELETE"],
       allowedHeaders: ["Content-Type", "Authorization"],
     })
